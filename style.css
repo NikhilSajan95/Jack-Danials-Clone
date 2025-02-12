@@ -1,0 +1,416 @@
+@import url(https://db.onlinewebfonts.com/c/46fa5542a3c66a4108133e3f6c977943?family=HWT+Unit+Gothic+W03+722);
+@import url(https://db.onlinewebfonts.com/c/eac402cb6ea076e357cbaa5c6dccf2dd?family=Suomi+Slab+Serif+W01+Medium);
+@import url(https://db.onlinewebfonts.com/c/0b4832910f8c62e341d74bcc819c9cb3?family=Hapna+Slab+Serif+W00+Bold);
+@import url(https://db.onlinewebfonts.com/c/d6f7918ca25b416408c8e212cac84b52?family=Gothic+SSi);
+@import url(https://db.onlinewebfonts.com/c/9c8c4bf74e73222282a37387b5fafe31?family=Gotcha+Gothic);
+@import url(https://db.onlinewebfonts.com/c/02e883d4bc1246a40f0c7e309f9761fe?family=Carrois+Gothic);
+@import url(https://db.onlinewebfonts.com/c/aa4a0305ca8b9f59618acc4c461e514a?family=TrumpGothicPro);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+.header-container{
+    background-image: url(./assets/images/v3-1600x635\ \(1\).jpg);
+    background-size: cover;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    height: 635px;
+    width: 100%;
+}
+
+.nav-bar-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+   
+}
+.nav-bar-1 img{
+    height: 38px;   
+    width: 94px;
+    position: absolute;
+    top: 20px;
+    left: 38px;
+    cursor: pointer;
+}
+
+.nav-bar-1 span{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Oswald", serif;
+    margin-right: 39px;
+    margin-left: 8px;
+}
+
+.india{
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+.nav-bar-2{
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: "Oswald", serif;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: right;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-bar-2>a{
+    color: #baab8f;
+    text-decoration: none;
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-bar-2 span,.nav-bar-2 svg{
+    color: white;
+    margin-right: 18px;
+}
+
+
+/* section  */
+.section-container{
+    background-image: url(./assets/images/Home_No7_Desktop_01_Opt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 560px;
+    padding: 30px 0;
+}
+
+.bar{
+    width: 3px;
+    height: 75px;
+    border-left: 1px solid rgb(186, 171, 143);
+    border-right: 1px solid rgb(186, 171, 143);
+    
+}
+
+.text-container{
+    width: fit-content;
+    color: white;
+    font-size: 30px;
+    font-family: "TrumpGothicPro";  
+    font-weight: lighter;
+    letter-spacing: 5px; 
+    margin-left: 300px;
+}
+
+
+
+.text-container h2{
+    padding-top: 15px;
+    padding-bottom: 11px;
+    
+}
+
+.text-container>p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding-bottom: 38px;
+}
+
+.button{
+    color: rgb(186, 171, 143);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: "TrumpGothicPro";
+    letter-spacing: 3px;
+    border: #baab8f solid;
+    padding: 12px 26px 12px 26px;
+    background: black;
+    
+  
+    display: inline-block;
+   
+    cursor: pointer;
+    transform: skew(180deg);
+  
+}
+/*animation*/
+
+  .button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #baab8f;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.2s;
+  }
+
+  .button:hover{
+    color: black; 
+  }
+  
+  .button:hover:before{
+    left: 0;
+    right: 0;
+    opacity: 2;
+  } 
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 147px;
+    background-color: #000000b3;
+    border-top: 1.5px solid #baab8f;
+    border-bottom: 1.5px solid #baab8f;
+}
+
+.menu-bar-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "TrumpGothicPro";
+    letter-spacing: 1.5px;
+    color: white;
+    fill: white;
+    height: 90PX;
+    width: 130PX; 
+    border-left: 1.5px solid #baab8f;
+    cursor: pointer;
+}
+
+.b-right{
+    border-right: 1.5px solid #baab8f;
+}
+
+.one-line{
+    padding-bottom: 28px;
+}
+
+/*container-2  */
+
+#container-2{
+    background-image: url(./assets/images/Desktop_NGHomepage_India.png);
+    height: 636px;
+}
+
+.spacing{
+    padding-bottom: 32px;
+}
+
+/*container-3  */
+
+#container-3{
+    background-image: url(./assets/images/HoneyDesktop3_mp_0.jpg);
+    height: 636px;
+}
+
+.text-right{
+    margin-left: 766px;
+}
+
+/*container-4  */
+
+#container-4{
+    background-image: url(./assets/images/RECIPE_BKRND_DESKTOP_Opt2.jpg);
+    height: 636px;
+}
+
+.select{
+    font-size: 22px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 14px !important;
+    letter-spacing: 2px;
+
+}
+
+.select-1{
+    padding-bottom: 50px !important;
+}
+
+.selct-text-1{
+    color: #baab8f;
+    padding-right: 95px;
+    border-bottom: 1px dashed #baab8f;
+}
+
+.selct-text-2{
+    color: #baab8f;
+    padding-right: 45px;
+    border-bottom: 1px dashed #baab8f;
+}
+
+/*container-5 */
+
+#container-5{
+    background-image: url(./assets/images/NearestGreen.jpeg);
+    height: 636px;
+}
+
+
+/*  FOOTER  */
+
+.footer-container{
+    background-image: url(./assets/images/bgOverlay.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 740px;
+}
+
+.footer-header{
+    height: 104px;
+    background-image: linear-gradient(rgba(186, 171, 143, 0.8), rgba(186, 171, 143, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: "Oswald", serif;;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer-header a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black;
+    background-color: #baab8f;
+    color: black;
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 7px 7px 7px 24px;
+    margin-left: 16px;
+}
+
+.white-gradient{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    height: 636px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    /*justify-content: center; */
+    /*font-family: "TrumpGothicPro";*/
+    
+}
+
+.footer-elements{
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-jack{
+    cursor: pointer;
+}
+
+.text-style{
+    font-size: 15px;
+    font-family: "Oswald", serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-top: 13px;
+}
+
+.text-style>span{
+    cursor: pointer;
+}
+
+.display{
+    display: flex;
+    column-gap: 42px;
+    margin-top: 22px;
+    
+}
+
+.media-icons{
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+.media-icons>svg{
+    cursor: pointer;
+}
+
+.language{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 40px;
+}
+
+.language span{
+    padding-left: 12px;
+    line-height: 2rem;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Oswald", serif;
+    
+}
+
+.footer-description{
+    font-size: 16px;
+    font-family: "Josefin Slab", serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 25px;
+    
+}
+.footer-description span{
+    font-size: 18px;
+    font-family: serif;
+    font-weight: 500;
+}
+
+.footer-description a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.page-end{
+    width: 100%;
+    background-color: black;
+    padding-top: 11px;
+}
